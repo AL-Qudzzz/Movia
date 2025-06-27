@@ -17,7 +17,7 @@ export function Hero() {
           <h1 className="font-headline text-4xl font-bold md:text-5xl lg:text-6xl">
             Track films you've watched.
           </h1>
-          <h2 className="mt-4 max-w-2xl font-body text-lg text-muted-foreground md:text-xl">
+          <h2 className="mx-auto mt-4 max-w-2xl font-body text-lg text-muted-foreground md:text-xl">
             Save those you want to see, tell your friends what's good.
           </h2>
           <Button size="lg" className="mt-8 rounded-md px-8 py-3 font-bold">
