@@ -28,11 +28,11 @@ export function Header() {
           </div>
         </div>
         <div className="flex shrink-0 items-center gap-4">
-          <Link href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-white">
+          <Link href="/login" className="text-sm font-medium text-muted-foreground transition-colors hover:text-white">
             Sign In
           </Link>
-          <Button variant="default" className="rounded-md font-bold">
-            Create Account
+          <Button asChild variant="default" className="rounded-md font-bold">
+            <Link href="/signup">Create Account</Link>
           </Button>
         </div>
       </div>
