@@ -62,7 +62,7 @@ export default function FilmsPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#14181C] via-transparent to-transparent" />
         </section>
 
-        <div className="container mx-auto -mt-16 px-4 py-8 md:px-6">
+        <div className="relative z-10 container mx-auto -mt-16 px-4 py-8 md:px-6">
             {/* Filter Section */}
             <section className="mb-8">
                 <div className="flex flex-wrap items-center justify-between gap-4">
