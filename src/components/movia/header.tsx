@@ -19,7 +19,7 @@ export function Header({ activePage }: { activePage?: string }) {
     { href: "/films", label: "Film" },
     { href: "/review", label: "Review" },
     { href: "/list", label: "List" },
-    { href: "#", label: "Community" },
+    { href: "/community", label: "Community" },
   ];
 
   return (
