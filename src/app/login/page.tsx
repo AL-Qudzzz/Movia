@@ -22,6 +22,17 @@ export default function LoginPage() {
     const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsLoading(true);
+
+        if (!auth) {
+            toast({
+                variant: "destructive",
+                title: "Firebase not configured.",
+                description: "Please add your Firebase credentials to .env.local",
+            });
+            setIsLoading(false);
+            return;
+        }
+
         try {
             await signInWithEmailAndPassword(auth, email, password);
             toast({ title: "Success", description: "Signed in successfully." });
