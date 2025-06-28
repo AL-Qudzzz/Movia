@@ -4,13 +4,13 @@ import { getAuth, type Auth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBR5xqG2L3Y_5czBdE2GJlpGq1fBONREdE",
-  authDomain: "movia-63921.firebaseapp.com",
-  projectId: "movia-63921",
-  storageBucket: "movia-63921.appspot.com",
-  messagingSenderId: "475599421215",
-  appId: "1:475599421215:web:7508c97f2043fbb2b03a2a",
-  measurementId: "G-L8M1QFGM0F"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 
