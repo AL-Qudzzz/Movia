@@ -17,7 +17,7 @@ export function Header({ activePage }: { activePage?: string }) {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/films", label: "Film" },
-    { href: "#", label: "Review" },
+    { href: "/review", label: "Review" },
     { href: "#", label: "List" },
     { href: "#", label: "Community" },
   ];
