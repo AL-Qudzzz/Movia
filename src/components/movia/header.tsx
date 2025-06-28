@@ -86,7 +86,7 @@ export function Header({ activePage }: { activePage?: string }) {
         <div className="container mx-auto">
             <nav className="flex items-center justify-center gap-2 py-2 md:gap-4">
               {navLinks.map(link => (
-                <Button key={link.label} variant={activePage === link.label ? "secondary" : "default"} asChild>
+                <Button key={link.label} variant={activePage === link.label ? "secondary" : "default"} className="w-24" asChild>
                    <Link href={link.href}>{link.label}</Link>
                 </Button>
               ))}
