@@ -20,7 +20,7 @@ export function Header() {
         <div className="flex items-center gap-8">
           <Logo />
           <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-            <Link href="#" className="text-muted-foreground transition-colors hover:text-white">Films</Link>
+            <Link href="/films" className="text-muted-foreground transition-colors hover:text-white">Films</Link>
             <Link href="#" className="text-muted-foreground transition-colors hover:text-white">Lists</Link>
             <Link href="#" className="text-muted-foreground transition-colors hover:text-white">Members</Link>
             <Link href="#" className="text-muted-foreground transition-colors hover:text-white">Journal</Link>
@@ -60,7 +60,7 @@ export function Header() {
                     <Logo />
                   </div>
                   <nav className="grid gap-4 text-lg">
-                    <Link href="#" className="font-medium text-white hover:text-primary">Films</Link>
+                    <Link href="/films" className="font-medium text-white hover:text-primary">Films</Link>
                     <Link href="#" className="font-medium text-white hover:text-primary">Lists</Link>
                     <Link href="#" className="font-medium text-white hover:text-primary">Members</Link>
                     <Link href="#" className="font-medium text-white hover:text-primary">Journal</Link>
