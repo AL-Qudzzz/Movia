@@ -37,7 +37,7 @@ const justReviewed = [
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-[#14181C]">
-      <Header />
+      <Header activePage="Home" />
       <main className="flex-grow">
         <Hero />
         <div className="container mx-auto px-4 py-12 md:px-6">

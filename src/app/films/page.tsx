@@ -49,31 +49,20 @@ const FilterDropdown = ({ label, options }: { label: string, options: string[] }
 export default function FilmsPage() {
   return (
     <div className="flex min-h-screen flex-col bg-[#14181C] text-white">
-      <Header />
+      <Header activePage="Film" />
       <main className="flex-grow">
-        <section className="relative h-[40vh] min-h-[300px] w-full">
+        <section className="relative h-[30vh] min-h-[250px] w-full">
             <Image
                 src="https://placehold.co/1920x480.png"
                 alt="Film collage background"
                 data-ai-hint="film movie"
                 fill
-                className="object-cover opacity-30"
+                className="object-cover opacity-20"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#14181C] via-transparent to-transparent" />
-            <div className="relative z-10 flex h-full flex-col items-center justify-end pb-8">
-                <div className="container mx-auto px-4 md:px-6">
-                    <nav className="flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary/50 p-2 backdrop-blur-sm md:gap-4">
-                        <Button variant="default" asChild><Link href="/">Home</Link></Button>
-                        <Button variant="secondary" asChild><Link href="/films">Film</Link></Button>
-                        <Button variant="default" asChild><Link href="#">Review</Link></Button>
-                        <Button variant="default" asChild><Link href="#">List</Link></Button>
-                        <Button variant="default" asChild><Link href="#">Community</Link></Button>
-                    </nav>
-                </div>
-            </div>
         </section>
 
-        <div className="container mx-auto px-4 py-8 md:px-6">
+        <div className="container mx-auto -mt-16 px-4 py-8 md:px-6">
             {/* Filter Section */}
             <section className="mb-8">
                 <div className="flex flex-wrap items-center justify-between gap-4">
