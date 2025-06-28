@@ -25,16 +25,6 @@ export default function SignupPage() {
         e.preventDefault();
         setIsLoading(true);
 
-        if (!auth) {
-            toast({
-                variant: "destructive",
-                title: "Firebase not configured.",
-                description: "Please add your Firebase credentials to .env.local",
-            });
-            setIsLoading(false);
-            return;
-        }
-
         if (password.length < 6) {
             toast({
                 variant: "destructive",
